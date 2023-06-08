@@ -1,5 +1,5 @@
 # NK-Bakery-Delivery
-DEMO: https://nk-bakery-delivery.netlify.app/
+DEMO: https://coruscating-cheesecake.netlify.app/
 
 This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create React App</a>.
 
