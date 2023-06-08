@@ -1,0 +1,309 @@
+.App {
+   width: 100vw;
+   height: 100vh;
+   background-color: #f7f7fc;
+   overflow-x: hidden;
+   color: #3b464e;
+}
+.App::-webkit-scrollbar {
+   display: none;
+}
+.container {
+   padding: 20px;
+   margin-top: 50px;
+   height: 100%;
+   width: 100%;
+}
+
+/* NAVBAR */
+.navbar {
+   display: flex;
+   align-items: center;
+   padding: 5px 15px;
+   max-height: 50px;
+   width: 100%;
+   background: #f7f7fc;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+}
+.navItem {
+   padding: 5px;
+}
+.navItem.active {
+   font-weight: 600;
+   text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------------------------------------------*/
+/* SHOP PAGE */
+/* ------------------------------------------------------------------------------------------------------------*/
+
+/* SHOP CONTAINER */
+.shop {
+   display: flex;
+   gap: 20px;
+}
+.shopsContainer {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background-color: #fff;
+   padding-top: 20px;
+   overflow-y: scroll;
+   border-radius: 10px;
+   min-width: 200px;
+   max-width: 200px;
+}
+.shopsContainer::-webkit-scrollbar {
+   display: none;
+}
+.shopCards {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   padding: 15px;
+   min-width: 200px;
+   max-width: 200px;
+}
+.shopCardItem {
+   max-width: 160px;
+   min-width: 140px;
+   max-height: 80px;
+   min-height: 80px;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #f7f7fc;
+   transition: 0.5s;
+   cursor: pointer;
+}
+.shopCardItem:hover, 
+.shopCardItem.active {
+   background: #a1b6c7;
+   font-weight: 700;
+}
+
+/* PRODUCT CONTAINER */
+.productsContainer {
+   display: flex;
+   flex-wrap: wrap;
+   background-color: #fff;
+   gap: 20px;
+   padding: 20px;
+   overflow-y: scroll;
+   border-radius: 10px;
+   width: 80vw;
+}
+.productCardItem {
+   width: 230px;
+   height: 250px;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #f7f7fc;
+   padding: 10px;
+}
+.productCardItem .imgItem {
+   width: 100%;
+   height: 160px;
+   border-radius: 10px;
+}
+.productCardItem .imgItem img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 10px;
+}
+.productCardData {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 10px 0;
+   font-size: small;
+}
+.productCardItem .addBtn {
+   background-color: #a1b6c7;
+   width: 100px;
+   height: 45px;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+/* ------------------------------------------------------------------------------------------------------------*/
+/* CART PAGE */
+/* ------------------------------------------------------------------------------------------------------------*/
+.checkOut {
+   height: 100vh;
+}
+.checkOut form {
+   height: 100vh;
+}
+.cart {
+   width: 100%;
+   height: 80%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   overflow-y: scroll;
+   border-radius: 10px;
+}
+
+/* IMPUT CONTAINER */
+.imputContainer,
+.cartContainer {
+   width: 50vw;
+   height: 100%;
+   display: flex;
+   padding: 20px;
+   gap: 20px;
+   overflow-y: scroll;
+   border-radius: 10px;
+   background-color: #fff;
+}
+.imputContainer  {
+   display: flex;
+   flex-direction: column;
+   align-items:flex-start;
+   gap: 5px;
+}
+.imputContainer label {
+   width: 100%;
+   margin-bottom: 15px;
+}
+.imputContainer label input {
+   width: 100%;
+   margin-bottom: 15px;
+}
+
+/* CART CONTAINER */
+.cartContainer {
+   flex-direction: column;
+}
+.cartItem {
+   width: 100%;
+   height: 130px;
+   border-radius: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #f7f7fc;
+   padding: 10px;
+   gap: 10px;
+}
+.cartItem .cartImg {
+   width: 50%;
+   height: 100%;
+   border-radius: 10px;
+}
+.cartItem .cartImg img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 10px;
+}
+.cartItemData {
+   height: 100%;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.cartItemData .quantity {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+.addSomeItem {
+   width: 100%;
+   height: 100%;
+   margin-top: 60px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 40px;
+}
+.cartEmpty {
+   width: 300px;
+   height: 300px;
+}
+
+/* SUBMIT CONTAINER */
+.submitContainer {
+   padding: 10px;
+   margin-top: auto;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+.submitContainer h3 {
+   margin-right: 50px;
+}
+.submitContainer .submitBtn {
+   background-color: #a1b6c7;
+   width: 150px;
+   height: 40px;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   transition: 0.5s;
+   font-size: larger;
+}
+
+
+.modal.open {
+   position: fixed;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.modal_body {
+   width: 400px;
+   height: 200px;
+   background-color: #fff;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 15px;
+}
+.modal_body h3,h4 {
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+}
+.modal_btn {
+   width: 50px;
+   padding: 5px 35px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
